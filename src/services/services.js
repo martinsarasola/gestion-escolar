@@ -64,3 +64,19 @@ export async function updateEstudiante(id, updatedData) {
 
   return result;
 }
+
+export async function createEstudiante(nuevoAlumno) {
+  const url = `${API_URL}/estudiantes`;
+  const response = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(nuevoAlumno),
+  });
+  const result = await response.json();
+  if (!response.ok || !result.success) {
+    throw new Error(
+      "Error al crear el estudiante: " + (result.message || "Error desconocido")
+    );
+  }
+  return result;
+}
