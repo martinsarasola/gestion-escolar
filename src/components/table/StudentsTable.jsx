@@ -90,7 +90,7 @@ function StudentsTable({ onRowClick, refresh, search, searchId }) {
     },
     { field: "col2", headerName: "Nombre", width: 120 },
     { field: "col3", headerName: "Apellido", width: 120 },
-    { field: "col4", headerName: "Email", flex: 1 },
+    { field: "col4", headerName: "Email", minWidth: 230, flex: 1 },
   ];
 
   return (

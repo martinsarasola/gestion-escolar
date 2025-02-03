@@ -15,9 +15,9 @@ function Layout() {
             display: "flex",
             width: "100vw",
             maxWidth: "100%",
-            paddingTop: "87px",
-            paddingLeft: "98px",
-            paddingRight: "35px",
+            paddingTop: { xs: "50px", sm: "87px" },
+            paddingLeft: { xs: "61px", sm: "98px" },
+            paddingRight: { xs: "0px", sm: "35px" },
             paddingBottom: "21px",
             border: "0px solid black",
           }}
