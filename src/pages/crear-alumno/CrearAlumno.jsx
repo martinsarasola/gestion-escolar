@@ -131,6 +131,7 @@ function CrearAlumno() {
             border: "1px solid #D0D0D0",
             borderRadius: "3px",
             backgroundColor: "white",
+            padding: "10px 0",
           }}
         >
           <Box
@@ -260,6 +261,7 @@ function CrearAlumno() {
                   sx={{
                     fontFamily: '"Source Serif Pro", serif',
                     height: "13%",
+                    margin: "5px",
                   }}
                 >
                   Cursos:
