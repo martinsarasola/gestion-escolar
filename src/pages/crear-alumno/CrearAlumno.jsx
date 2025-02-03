@@ -12,6 +12,8 @@ import {
 import { List, ListItem, ListItemText } from "@mui/material";
 import { useTheme } from "@emotion/react";
 
+import { createEstudiante } from "../../services/services";
+
 function CrearAlumno() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
@@ -21,7 +23,6 @@ function CrearAlumno() {
   const [email, setEmail] = useState("");
 
   const cursosDisponibles = ["Matemática", "Historia", "Ciencias", "Arte"];
-
   const [cursosSeleccionados, setCursosSeleccionados] = useState([]);
 
   const [snackbarOpen, setSnackbarOpen] = useState(false);
@@ -66,28 +67,18 @@ function CrearAlumno() {
     };
 
     try {
-      const response = await fetch(
-        "https://api-gestion-escolar.vercel.app/api/estudiantes",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(nuevoAlumno),
-        }
-      );
-
-      const result = await response.json();
-      if (response.ok && result.success) {
-        showMessage("Estudiante creado con éxito.", "success");
-        setNombre("");
-        setApellido("");
-        setEmail("");
-        setCursosSeleccionados([]);
-      } else {
-        showMessage("Error al crear el estudiante: " + result.message, "error");
-      }
+      const result = await createEstudiante(nuevoAlumno);
+      showMessage("Estudiante creado con éxito.", "success");
+      setNombre("");
+      setApellido("");
+      setEmail("");
+      setCursosSeleccionados([]);
     } catch (error) {
       console.error("Error al crear el estudiante:", error);
-      showMessage("Error al conectar con el servidor.", "error");
+      showMessage(
+        error.message || "Error al conectar con el servidor.",
+        "error"
+      );
     }
   };
 
