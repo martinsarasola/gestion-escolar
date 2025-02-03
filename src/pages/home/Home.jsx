@@ -77,7 +77,6 @@ function Home() {
               </Typography>
             </Box>
 
-            {/* Bloque para Total de Cursos */}
             <Box
               sx={{
                 flex: 1,
