@@ -54,6 +54,7 @@ function Cursos() {
             flexWrap: "wrap",
             gap: 2,
             width: "100%",
+            minHeight: { xs: "82vh", sm: "" },
             border: "1px solid #FEC20C",
             borderRadius: "3px",
             padding: 1,

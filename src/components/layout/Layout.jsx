@@ -18,7 +18,7 @@ function Layout() {
             paddingTop: { xs: "50px", sm: "87px" },
             paddingLeft: { xs: "61px", sm: "98px" },
             paddingRight: { xs: "0px", sm: "35px" },
-            paddingBottom: "21px",
+            paddingBottom: { xs: "0px", sm: "21px" },
             border: "0px solid black",
           }}
         >
