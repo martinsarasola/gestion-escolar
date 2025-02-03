@@ -54,7 +54,6 @@ function Alumnos() {
 
   const [refresh, setRefresh] = useState(0);
 
-  // Estados para la Snackbar
   const [snackbarOpen, setSnackbarOpen] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState("");
   const [snackbarSeverity, setSnackbarSeverity] = useState("error");
