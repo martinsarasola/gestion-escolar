@@ -1,7 +1,6 @@
 const API_URL = import.meta.env.VITE_API_URL;
 
 export async function getEstudiantes() {
-  console.log(API_URL);
   const url = `${API_URL}/estudiantes`;
   const response = await fetch(url);
 
