@@ -99,5 +99,20 @@ npm run dev
 
 ### 5. Acceder a la aplicación: La aplicación estará disponible en http://localhost:5173
 
+## Capturas de Pantalla
+### Pantalla de inicio
+![image](https://github.com/user-attachments/assets/0dd7be55-0165-4b06-942b-1a6f45cd01ae)
+
+### Vista de lista de alumnos
+![image](https://github.com/user-attachments/assets/6be0a149-0aa5-46a6-82fa-fb8c65e52077)
+
+### Vista de creación de alumnos
+![image](https://github.com/user-attachments/assets/3eb79ae2-2f95-4664-9375-9d3d1ccec1f7)
+
+### Vista de cursos disponibles
+![image](https://github.com/user-attachments/assets/daac1cbe-892c-4210-8b73-0535cf2b6878)
+
+
+
 ## Contacto
 José Martín Sarasola - martin.sarasola01@hotmail.com Link del Proyecto: https://github.com/martinsarasola/gestion-escolar
