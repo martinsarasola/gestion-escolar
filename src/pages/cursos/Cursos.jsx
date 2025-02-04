@@ -44,7 +44,7 @@ function Cursos() {
               letterSpacing: "2px",
             }}
           >
-            LISTA DE CURSOS DISPONIBLES
+            CURSOS DISPONIBLES
           </Typography>
         </Box>
 
